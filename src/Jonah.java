@@ -31,7 +31,7 @@ public class Jonah {
 }
 
 //base class defining operation method and input result
-abstract class Jonah0 {
+abstract class BaseJonah {
 
 	public abstract Integer operation(int a, int b);
 
@@ -66,7 +66,7 @@ abstract class Jonah0 {
 
 }
 //class implementing multiplication
-class Jonah1 extends Jonah0 {
+class Jonah1 extends BaseJonah {
 
 	@Override
 	public Integer operation(int a, int b) {
@@ -81,7 +81,7 @@ class Jonah1 extends Jonah0 {
 }
 
 //class implementing addition
-class Jonah2 extends Jonah0 {
+class Jonah2 extends BaseJonah {
 
 	@Override
 	public Integer operation(int a, int b) {
